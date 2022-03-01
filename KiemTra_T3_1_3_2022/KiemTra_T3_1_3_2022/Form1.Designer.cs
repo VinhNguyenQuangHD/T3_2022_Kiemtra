@@ -95,6 +95,10 @@
             this.btnlogin.TabIndex = 6;
             this.btnlogin.Text = "Đăng nhập";
             this.btnlogin.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+=======
+>>>>>>> a_branch
             // 
             // Form1
             // 
@@ -117,12 +121,20 @@
 
         #endregion
 
+<<<<<<< HEAD
+        private Label label1;
+=======
         private Label lb_username;
+>>>>>>> a_branch
         private Label label2;
         private TextBox tb_username;
         private Label label3;
         private Label label4;
         private TextBox tb_matkhau;
         private Button btnlogin;
+<<<<<<< HEAD
+        private Label lb_username;
+=======
+>>>>>>> a_branch
     }
 }
