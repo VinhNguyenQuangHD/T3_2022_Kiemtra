@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_username = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_username = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,15 +37,15 @@
             this.btnlogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lb_username
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(248, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "user name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lb_username.AutoSize = true;
+            this.lb_username.Location = new System.Drawing.Point(248, 86);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(107, 20);
+            this.lb_username.TabIndex = 0;
+            this.lb_username.Text = "Tên đăng nhập";
+            this.lb_username.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -57,7 +57,7 @@
             // 
             // tb_username
             // 
-            this.tb_username.Location = new System.Drawing.Point(331, 79);
+            this.tb_username.Location = new System.Drawing.Point(375, 86);
             this.tb_username.Name = "tb_username";
             this.tb_username.Size = new System.Drawing.Size(125, 27);
             this.tb_username.TabIndex = 2;
@@ -74,7 +74,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(248, 127);
+            this.label4.Location = new System.Drawing.Point(265, 127);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 20);
             this.label4.TabIndex = 4;
@@ -82,19 +82,20 @@
             // 
             // tb_matkhau
             // 
-            this.tb_matkhau.Location = new System.Drawing.Point(335, 128);
+            this.tb_matkhau.Location = new System.Drawing.Point(375, 120);
             this.tb_matkhau.Name = "tb_matkhau";
             this.tb_matkhau.Size = new System.Drawing.Size(125, 27);
             this.tb_matkhau.TabIndex = 5;
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(341, 206);
+            this.btnlogin.Location = new System.Drawing.Point(393, 177);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(94, 29);
             this.btnlogin.TabIndex = 6;
-            this.btnlogin.Text = "login";
+            this.btnlogin.Text = "Đăng nhập";
             this.btnlogin.UseVisualStyleBackColor = true;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // Form1
             // 
@@ -107,7 +108,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lb_username);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -124,5 +125,6 @@
         private Label label4;
         private TextBox tb_matkhau;
         private Button btnlogin;
+        private Label lb_username;
     }
 }
