@@ -31,6 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_username = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tb_matkhau = new System.Windows.Forms.TextBox();
+            this.btnlogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -58,11 +62,49 @@
             this.tb_username.Size = new System.Drawing.Size(125, 27);
             this.tb_username.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(335, 215);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(248, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Mật khẩu";
+            // 
+            // tb_matkhau
+            // 
+            this.tb_matkhau.Location = new System.Drawing.Point(335, 128);
+            this.tb_matkhau.Name = "tb_matkhau";
+            this.tb_matkhau.Size = new System.Drawing.Size(125, 27);
+            this.tb_matkhau.TabIndex = 5;
+            // 
+            // btnlogin
+            // 
+            this.btnlogin.Location = new System.Drawing.Point(341, 206);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(94, 29);
+            this.btnlogin.TabIndex = 6;
+            this.btnlogin.Text = "login";
+            this.btnlogin.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnlogin);
+            this.Controls.Add(this.tb_matkhau);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.tb_username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -78,5 +120,9 @@
         private Label label1;
         private Label label2;
         private TextBox tb_username;
+        private Label label3;
+        private Label label4;
+        private TextBox tb_matkhau;
+        private Button btnlogin;
     }
 }

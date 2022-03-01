@@ -11,5 +11,10 @@ namespace KiemTra_T3_1_3_2022
         {
 
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
